@@ -48,7 +48,7 @@ Tomcat主要的功能有：
 1. Http服务器将请求信息用ServletRequest对象封装
 2. Servlet获得请求后，根据URL和Servlet的映射关系，调用Servlet容器中相应Servlet处理请求（如果Serlet还没有被加载，那么需要根据java的反射机制创建Servlet，并调用其自身的init方法来初始化）
 3. 将请求的处理结果用ServletResponse对象封装
-4. 把Servlet对象返回给Http服务器，随后Http服务器会将相应发送给客户端
+4. 把封装后的处理结果返回给Http服务器，随后Http服务器会将处理结果发送给客户端
 
 ### Tomcat主要功能模块
 

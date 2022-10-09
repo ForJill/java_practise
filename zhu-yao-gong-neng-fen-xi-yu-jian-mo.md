@@ -41,9 +41,7 @@ public class HelloWorld extends HttpServlet {
 
 显示效果为：
 
-<figure><img src=".gitbook/assets/helloworld.png" alt=""><figcaption></figcaption></figure>
-
-源代码导入了三个包，分别是java.io,jakarta.servlet和jakarta.servlet.http，java.io中包含用于对IO流的类和方法，后两者表示servlet api的接口和类。源代码构造了一个继承自HttpServlet类的HelloWorld类。HttpServlet类来自javax.servlet.http包，它扩展了`GenericServlet`类并实现了`Serializable`接口。HelloWorld类中的doGet方法就调用了HttpServlet类中的由Web容器调用doGet方法，用于处理GET请求，生成response对象。在收到请求后，response对象先调用setContentType方法设置内容类型为html，再调用getWriter()方法，返回一个声明为out的PrintWriter类的对象，out调用PrintWriter自带的println按行输出html语句。
+<figure><img src=".gitbook/assets/helloworld.png" alt=""><figcaption><p>浏览器画面</p></figcaption></figure>
 
 ### 需求建模
 
@@ -83,7 +81,7 @@ public class HelloWorld extends HttpServlet {
 | --------- | --------- | --------- |
 | Servlet   | 生命周期，描述信息 | 处理请求，生成响应 |
 | Servlet容器 | 容量        | 调用Servlet |
-| 连接器传输     | 能力        | 获取请求，返回响应 |
+| 连接器       | 传输能力      | 获取请求，返回响应 |
 
 ### 实例代码分析
 

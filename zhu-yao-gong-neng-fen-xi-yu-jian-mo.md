@@ -83,6 +83,10 @@ public class HelloWorld extends HttpServlet {
 | Servlet容器 | 容量        | 调用Servlet |
 | 连接器       | 传输能力      | 获取请求，返回响应 |
 
+根据上面的表格画出一个简单的类图，Servlet和Servlet容器之间是聚合的关系，Servlet容器和连接器之间是简单的关联关系。
+
+<figure><img src=".gitbook/assets/需求分析类图.png" alt=""><figcaption></figcaption></figure>
+
 ### 实例代码分析
 
 结合从需求模型中提取出来的类模型，我们可以深入地阅读上面的简单实例的代码

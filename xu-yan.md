@@ -2,7 +2,7 @@
 description: Tomcat源码阅读报告
 ---
 
-# 序言
+# 😼 序言
 
 本文是一篇Tomcat源码阅读报告，产生自中国科学院大学“面向对象程序设计”的课程作业。旨在对Tomcat项目进行一个总体的介绍和分析，并对其中最重要的连接器和容器模块进行细致的分析和讲解。如有错漏，敬请告知。
 
@@ -12,7 +12,7 @@ description: Tomcat源码阅读报告
 
 ### Tomcat的目录结构
 
-在[Tomcat官网](https://tomcat.apache.org/)上，我们可以获取它的源码。我采用vscode这一IDE作为分析源码的工具。将源码文件夹用vscode打开，可以看到源码的目录结构如下：
+在[Tomcat官网](https://tomcat.apache.org/)上，我们可以获取它的源码。将源码文件夹用vscode打开，可以看到源码的目录结构如下：
 
 <figure><img src=".gitbook/assets/code1.png" alt=""><figcaption></figcaption></figure>
 
